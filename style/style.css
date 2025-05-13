@@ -1646,7 +1646,7 @@ box-shadow: 0 0 32px rgba(255, 138, 0, 0.4);
       }
     }
 
-    @media (max-width: 380px) {
+    @media (max-width: 480px) {
       nav {
         height: 50px;
     }
@@ -1654,6 +1654,13 @@ box-shadow: 0 0 32px rgba(255, 138, 0, 0.4);
         top: 50px;
         width: 100%;
         height: calc(100vh - 50px);
+    }
+    .nav-links a {
+        padding: 12px;
+        font-size: 1rem;
+    }
+    .logo-text {
+        font-size: 1rem;
     }
 
     .logo {
@@ -1736,5 +1743,14 @@ box-shadow: 0 0 32px rgba(255, 138, 0, 0.4);
         text-shadow: 0 0 20px var(--secondary);
       }
     }
-}
     
+}
+    @media (max-width: 360px) {
+    .logo-text {
+        font-size: 0.9rem;
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+}

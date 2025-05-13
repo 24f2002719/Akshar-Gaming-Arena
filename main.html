@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Akshar Gaming Arena</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Montserrat:wght@500;400&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Goldman:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Inline&family=Bungee+Shade&family=Carter+One&family=Chau+Philomene+One:ital@0;1&family=Chela+One&family=Cinzel:wght@400..900&family=Graduate&family=Righteous&family=Rubik+Dirt&family=Saira+Stencil+One&family=Wallpoet&display=swap"
+    rel="stylesheet"> <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/8e8e4c7c5c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <!-- Replace your existing loading screen div -->
+<div class="loading-screen" id="loadingScreen">
+    <div class="game-loading">
+        <div class="gamepad">
+            <div class="gamepad-body"></div>
+        </div>
+        <div class="loading-text">Loading<span class="loading-dots">...</span></div>
+        <div class="loading-progress">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+</div>
+  <!-- NAVIGATION BAR -->
+  <nav id="main-nav">
+    <div class="logo">
+      <img src="assest/logo.png" alt="Akshar Gaming Arena Logo" class="logo-img">
+      <span class="logo-text">AKSHAR GAMING ARENA</span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#gadgets">Gadgets</a>
+      <a href="#games">Games</a>
+      <a href="#gallery">Gallery</a>
+    <a href="#faq">FAQ</a>
+      <a href="#about">About</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <canvas class="particles"></canvas>
+    <div class="hero-content">
+      <div class="coming-soon-banner">COMING SOON</div>
+      <!-- Replace the existing hero-title div -->
+      <div class="hero-title" data-text="Akshar Gaming Arena">Akshar Gaming Arena</div>
+      <div class="hero-subtitle">
+        Step into the next-level gaming universe.<br>
+        <span style="color:#00ffe7;">PC • PlayStation • Tournaments • Lounge</span>
+      </div>
+      <button class="explore-btn" onclick="document.getElementById('games').scrollIntoView({behavior:'smooth'})">
+        <i class="fas fa-bolt"></i> Explore Now
+      </button>
+    </div>
+    <div class="scroll-down" onclick="document.getElementById('games').scrollIntoView({behavior:'smooth'})">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- Add this section after the hero section and before the games section -->
+  <section class="gadgets-section" id="gadgets">
+    <div class="section-title-wrapper">
+      <div class="section-title" data-text="Gaming Gadgets">Gaming Gadgets</div>
+    </div>
+    <div class="gadget-container">
+      <!-- PlayStation 5 -->
+      <div class="gadget-item">
+        <div class="gadget-image">
+          <img
+            src="https://images.immediate.co.uk/production/volatile/sites/3/2020/08/playstation-5-77d37a0.jpg?quality=90&resize=980,654"
+            alt="PlayStation 5">
+        </div>
+        <div class="gadget-content">
+          <h2 class="gadget-title">PlayStation 5</h2>
+          <p class="gadget-description">Experience next-gen gaming with the PS5's incredible graphics, lightning-fast
+            loading, and innovative DualSense controller. Immerse yourself in stunning 4K visuals and realistic haptic
+            feedback.</p>
+          <div class="gadget-specs">
+            <span class="spec-item">4K HDR Gaming</span>
+            <span class="spec-item">Ray Tracing</span>
+            <span class="spec-item">3D Audio</span>
+            <span class="spec-item">DualSense Controller</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Racing Simulator -->
+      <div class="gadget-item">
+        <div class="gadget-image">
+          <img src="https://trakracer.eu/cdn/shop/files/Slingshot_12_1080x.jpg?v=1703272627" alt="Racing Simulator">
+        </div>
+        <div class="gadget-content">
+          <h2 class="gadget-title">Racing Simulator</h2>
+          <p class="gadget-description">Feel the thrill of professional racing with our high-end racing simulator.
+            Features force feedback steering, professional pedals, and a dynamic racing seat for the ultimate racing
+            experience.</p>
+          <div class="gadget-specs">
+            <span class="spec-item">Force Feedback</span>
+            <span class="spec-item">Triple Screens</span>
+            <span class="spec-item">Racing Seat</span>
+            <span class="spec-item">Professional Pedals</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- VR2 -->
+      <div class="gadget-item">
+        <div class="gadget-image">
+          <img src="https://i.ytimg.com/vi_webp/-n_O8s6Eaps/maxresdefault.webp" alt="VR2">
+        </div>
+        <div class="gadget-content">
+          <h2 class="gadget-title">PlayStation VR2</h2>
+          <p class="gadget-description">Step into virtual reality with the PS VR2. Experience games in a whole new
+            dimension with stunning 4K HDR displays, precise motion tracking, and revolutionary sense controllers.</p>
+          <div class="gadget-specs">
+            <span class="spec-item">4K OLED</span>
+            <span class="spec-item">Eye Tracking</span>
+            <span class="spec-item">Haptic Feedback</span>
+            <span class="spec-item">3D Audio</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pool & Snooker -->
+      <div class="gadget-item">
+        <div class="gadget-image">
+          <img src="https://quedos.com.au/wp-content/uploads/2021/07/billiards.jpg" alt="Pool Table">
+        </div>
+        <div class="gadget-content">
+          <h2 class="gadget-title">Pool & Snooker Tables</h2>
+          <p class="gadget-description">Professional-grade pool and snooker tables for both casual players and serious
+            competitors. Premium slate beds, championship cloth, and precision-engineered cushions ensure perfect play
+            every time.</p>
+          <div class="gadget-specs">
+            <span class="spec-item">Tournament Size</span>
+            <span class="spec-item">Premium Slate</span>
+            <span class="spec-item">LED Lighting</span>
+            <span class="spec-item">Professional Equipment</span>
+          </div>
+        </div>
+      </div>
+      <!-- foosball table  -->
+      <div class="gadget-item">
+        <div class="gadget-image">
+          <img
+            src="https://www.videoamusement.com/wp-content/uploads/2020/03/Giant-16-player-LED-Foosball-Table-Extreme-Rental.jpg"
+            alt="Foosball Table">
+        </div>
+        <div class="gadget-content">
+          <h2 class="gadget-title">Foosball Tables</h2>
+          <p class="gadget-description">
+            Experience the excitement of table football with professional-grade foosball tables designed for both casual
+            play and intense competition. Featuring robust construction, smooth rod action, and customizable player
+            setups, these tables deliver dynamic gameplay and lasting durability for homes, offices, and entertainment
+            venues.
+          </p>
+          <div class="gadget-specs">
+            <span class="spec-item">Tournament-Standard Size</span>
+            <span class="spec-item">Heavy-Duty Frame</span>
+            <span class="spec-item">Counterbalanced Players</span>
+            <span class="spec-item">Customizable Teams</span>
+            <span class="spec-item">Indoor & Outdoor Use</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GAMES SECTION -->
+
+  <section class="section games-section" id="games">
+    <div class="games-animated-bg"></div>
+    <div class="section-title-wrapper">
+      <div class="section-title" data-text="Featured Games">Featured Games</div>
+    </div>
+    <div class="games-list">
+      <div class="game-card">
+        <div class="game-platform">PC / PS5</div>
+        <img
+          src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2322010/extras/INT9_PC_KeyArt-MotionGraphic.gif?t=1738256985"
+          alt="God of War Ragnarök">
+        <div class="game-overlay">
+          <h3 class="game-title">God of War Ragnarök</h3>
+          <p class="game-info">Embark on an epic journey through the Nine Realms with Kratos and Atreus.</p>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <div class="game-platform">PC / PS5</div>
+        <img
+          src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2531310/94b5d8b3165a6fe592e406054b08a2dd24e2f848/capsule_616x353.jpg?t=1746152571"
+          alt="The Last of Us">
+        <div class="game-overlay">
+          <h3 class="game-title">The Last of Us</h3>
+          <p class="game-info">Experience the emotional journey of Joel and Ellie in a post-apocalyptic world.</p>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <div class="game-platform">PC</div>
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1599340/capsule_616x353.jpg" alt="Lost Ark">
+        <div class="game-overlay">
+          <h3 class="game-title">Lost Ark</h3>
+          <p class="game-info">Explore a vast world in this action-packed MMOARPG.</p>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <div class="game-platform">PC</div>
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1172470/capsule_616x353.jpg" alt="Apex Legends">
+        <div class="game-overlay">
+          <h3 class="game-title">Apex Legends</h3>
+          <p class="game-info">Join the ultimate battle royale experience with legendary characters.</p>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <div class="game-platform">PC</div>
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/capsule_616x353.jpg" alt="CS:GO">
+        <div class="game-overlay">
+          <h3 class="game-title">Counter-Strike 2</h3>
+          <p class="game-info">The ultimate tactical shooter with intense 5v5 combat.</p>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <div class="game-platform">PC / PS5</div>
+        <img
+          src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2195250/f11315d7491f706b09b059d12424f711e9778b82/capsule_616x353.jpg?t=1743020121"
+          alt="FIFA 24">
+        <div class="game-overlay">
+          <h3 class="game-title">EA Sports FC 24</h3>
+          <p class="game-info">Experience the beautiful game with next-gen graphics and gameplay.</p>
+        </div>
+      </div>
+
+      <!-- Add more initial games here -->
+      <!-- Hidden games (shown when clicking Show More) -->
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PS5</div>
+        <img src="https://i.ytimg.com/vi/bgqGdIoa52s/sddefault.jpg" alt="Spider-Man 2">
+        <div class="game-overlay">
+          <h3 class="game-title">Marvel's Spider-Man 2</h3>
+          <p class="game-info">Swing through New York City as both Peter Parker and Miles Morales.</p>
+        </div>
+      </div>
+
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PS5</div>
+        <img src="https://cdn2.unrealengine.com/final-fantasy-xvi-pc-interview-feature-1920x1080-e3cb400017fa.jpg"
+          alt="Final Fantasy XVI">
+        <div class="game-overlay">
+          <h3 class="game-title">Final Fantasy XVI</h3>
+          <p class="game-info">Experience an epic tale of revenge and redemption.</p>
+        </div>
+      </div>
+
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PS5</div>
+        <img
+          src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2420110/capsule_616x353.jpg?t=1737564719"
+          alt="Horizon Forbidden West">
+        <div class="game-overlay">
+          <h3 class="game-title">Horizon Forbidden West</h3>
+          <p class="game-info">Join Aloy's quest in a majestic but dangerous frontier.</p>
+        </div>
+      </div>
+
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PS5</div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Hogwarts_Legacy_promotional_photo_horizontal.jpg"
+          alt="Hogwarts Legacy">
+        <div class="game-overlay">
+          <h3 class="game-title">Hogwarts Legacy</h3>
+          <p class="game-info">Create your own legacy in the wizarding world.</p>
+        </div>
+      </div>
+
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PS5</div>
+        <img src="https://i.ytimg.com/vi/VEuA8a68T7o/maxresdefault.jpg" alt="Ratchet & Clank: Rift Apart">
+        <div class="game-overlay">
+          <h3 class="game-title">Ratchet & Clank: Rift Apart</h3>
+          <p class="game-info">Dimension-hopping action with stunning visuals and fast-paced gameplay.</p>
+        </div>
+      </div>
+
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PS5</div>
+        <img
+          src="https://i.ytimg.com/vi/Gg7FQyfiubE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCZN4BhBfZgsvkEivBRA3k9E2w1OA"
+          alt="Demon's Souls">
+        <div class="game-overlay">
+          <h3 class="game-title">Demon's Souls</h3>
+          <p class="game-info">A gorgeous and challenging remake of the classic action RPG.</p>
+        </div>
+      </div>
+
+
+
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PS4</div>
+        <img src="https://www.themobileindian.com/wp-content/uploads/2021/06/uncharted-4.jpg"
+          alt="Uncharted 4: A Thief's End">
+        <div class="game-overlay">
+          <h3 class="game-title">Uncharted 4: A Thief's End</h3>
+          <p class="game-info">Nathan Drake’s final adventure blends treasure hunting with cinematic storytelling.</p>
+        </div>
+      </div>
+
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PS4</div>
+        <img src="https://i.ytimg.com/vi/SXvQ1nK4oxk/sddefault.jpg" alt="Red Dead Redemption 2">
+        <div class="game-overlay">
+          <h3 class="game-title">Red Dead Redemption 2</h3>
+          <p class="game-info">An epic tale of life in America’s unforgiving heartland from Rockstar Games.</p>
+        </div>
+      </div>
+
+
+
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PS4</div>
+        <img src="https://deadline.com/wp-content/uploads/2021/03/GOT_KEYART_78448-1.jpg" alt="Ghost of Tsushima">
+        <div class="game-overlay">
+          <h3 class="game-title">Ghost of Tsushima</h3>
+          <p class="game-info">Defend your home as samurai Jin Sakai during the Mongol invasion of Japan.</p>
+        </div>
+      </div>
+
+
+
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PS4</div>
+        <img
+          src="https://cdn1.epicgames.com/3328b08ac1c14540aa265a1a85c07839/offer/hzd_wide-2560x1440-bd312be05c49cf339097777c493cb899.jpg"
+          alt="Horizon Zero Dawn">
+        <div class="game-overlay">
+          <h3 class="game-title">Horizon Zero Dawn</h3>
+          <p class="game-info">Explore a lush world overrun by machines as the skilled hunter Aloy.</p>
+        </div>
+      </div>
+
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PS4</div>
+        <img src="https://img.youtube.com/vi/G203e1HhixY/sddefault.jpg" alt="Bloodborne">
+        <div class="game-overlay">
+          <h3 class="game-title">Bloodborne</h3>
+          <p class="game-info">Face your nightmares in this gothic, action-packed RPG from the creators of Dark Souls.
+          </p>
+        </div>
+      </div>
+
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PC</div>
+        <img
+          src="https://assets.xboxservices.com/assets/0b/17/0b179504-412d-4af7-9e00-3e3d92633577.jpg?n=GTA-V_GLP-Page-Hero-1084_1920x1080.jpg"
+          alt="Grand Theft Auto V">
+        <div class="game-overlay">
+          <h3 class="game-title">Grand Theft Auto V</h3>
+          <p class="game-info">Experience an epic open-world adventure in Los Santos with endless possibilities for
+            chaos and creativity.</p>
+        </div>
+      </div>
+
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PC</div>
+        <img
+          src="https://cdn1.epicgames.com/offer/14ee004dadc142faaaece5a6270fb628/EGS_TheWitcher3WildHuntCompleteEdition_CDPROJEKTRED_S1_2560x1440-82eb5cf8f725e329d3194920c0c0b64f"
+          alt="The Witcher 3: Wild Hunt">
+        <div class="game-overlay">
+          <h3 class="game-title">The Witcher 3: Wild Hunt</h3>
+          <p class="game-info">Embark on a massive fantasy RPG journey as Geralt of Rivia in a world filled with
+            monsters and moral choices.</p>
+        </div>
+      </div>
+
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PC</div>
+        <img src="https://image.api.playstation.com/vulcan/img/rnd/202111/0506/hcFeWRVGHYK72uOw6Mn6f4Ms.jpg"
+          alt="Elden Ring">
+        <div class="game-overlay">
+          <h3 class="game-title">Elden Ring</h3>
+          <p class="game-info">Explore a vast, interconnected world and face challenging foes in this acclaimed action
+            RPG from FromSoftware.</p>
+        </div>
+      </div>
+
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PC</div>
+        <img src="https://www.cyberpunk.net/build/images/social-thumbnail-en-ddcf4d23.jpg" alt="Cyberpunk 2077">
+        <div class="game-overlay">
+          <h3 class="game-title">Cyberpunk 2077</h3>
+          <p class="game-info">Dive into the neon-lit streets of Night City and shape your destiny in a futuristic
+            open-world RPG.</p>
+        </div>
+      </div>
+
+
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PC</div>
+        <img
+          src="https://cdn.sortiraparis.com/images/80/66131/1103306-valorant-le-jeu-video-signe-riot-games-est-disponible.jpg"
+          alt="Valorant">
+        <div class="game-overlay">
+          <h3 class="game-title">Valorant</h3>
+          <p class="game-info">Engage in tactical 5v5 shooter battles with unique agents and precise gunplay.</p>
+        </div>
+      </div>
+
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PC</div>
+        <img
+          src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000050313/75484f73fedd25cb830c5d93fbb3fca643a5ec0b09df2815291ead880bc7d6b1"
+          alt="Portal 2">
+        <div class="game-overlay">
+          <h3 class="game-title">Portal 2</h3>
+          <p class="game-info">Solve mind-bending puzzles using portals in this witty and inventive first-person
+            adventure.</p>
+        </div>
+      </div>
+
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PC</div>
+        <img
+          src="https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png"
+          alt="Minecraft">
+        <div class="game-overlay">
+          <h3 class="game-title">Minecraft</h3>
+          <p class="game-info">Create, explore, and survive in a limitless blocky world, solo or with friends.</p>
+        </div>
+      </div>
+
+
+
+      <div class="game-card extra-game" style="display: none;">
+        <div class="game-platform">PC</div>
+        <img src="https://www.exitlag.com/blog/wp-content/uploads/2024/10/league-of-legends-download-1.webp"
+          alt="League of Legends">
+        <div class="game-overlay">
+          <h3 class="game-title">League of Legends</h3>
+          <p class="game-info">Battle in the world’s most popular MOBA, mastering champions and strategy in intense 5v5
+            matches.</p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Add this button after the games-list div -->
+    <button class="games-more-btn" id="gamesShowMoreBtn">Show More Games</button>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <!-- Replace your existing gallery section -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-title-wrapper">
+      <div class="section-title" data-text="Photo Gallery">Photo Gallery</div>
+    </div>
+    <div class="gallery-grid">
+      <!-- Gaming Setup -->
+      <div class="gallery-img-wrapper">
+        <img class="gallery-img"
+          src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?auto=format&fit=crop&w=900&q=80"
+          alt="Gaming Setup">
+        <div class="gallery-overlay">
+          <div class="gallery-title">Pro Gaming Setup</div>
+          <div class="gallery-desc">High-end gaming stations with RTX graphics</div>
+        </div>
+      </div>
+
+      <!-- VR Zone -->
+      <div class="gallery-img-wrapper">
+        <img class="gallery-img"
+          src="https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&w=900&q=80"
+          alt="VR Gaming">
+        <div class="gallery-overlay">
+          <div class="gallery-title">VR Experience Zone</div>
+          <div class="gallery-desc">Immersive virtual reality gaming</div>
+        </div>
+      </div>
+
+      <!-- Racing Setup -->
+      <div class="gallery-img-wrapper">
+        <img class="gallery-img"
+          src="https://hips.hearstapps.com/hmg-prod/images/best-sim-racing-rig-2-6776c4978d16f.jpeg?crop=0.622xw:1.00xh;0.157xw,0&resize=980:*"
+          alt="Racing Simulator">
+        <div class="gallery-overlay">
+          <div class="gallery-title">Racing Simulator</div>
+          <div class="gallery-desc">Professional racing experience</div>
+        </div>
+      </div>
+
+      <!-- Tournament Area -->
+      <div class="gallery-img-wrapper">
+        <img class="gallery-img"
+          src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80"
+          alt="Tournament Area">
+        <div class="gallery-overlay">
+          <div class="gallery-title">Tournament Zone</div>
+          <div class="gallery-desc">Weekly gaming tournaments</div>
+        </div>
+      </div>
+
+      <!-- Console Gaming -->
+      <div class="gallery-img-wrapper">
+        <img class="gallery-img"
+          src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=900&q=80"
+          alt="PS5 Gaming">
+        <div class="gallery-overlay">
+          <div class="gallery-title">Console Gaming</div>
+          <div class="gallery-desc">Latest PS5 games and accessories</div>
+        </div>
+      </div>
+
+      <!-- Lounge Area -->
+      <div class="gallery-img-wrapper">
+        <img class="gallery-img"
+          src="https://vibezoneesports.in/assets/images/blogs/the-ultimate-gaming-cafe-experience-what-to-expect.jpg"
+          alt="Lounge Area">
+        <div class="gallery-overlay">
+          <div class="gallery-title">Gaming Lounge</div>
+          <div class="gallery-desc">Comfortable relaxation area</div>
+        </div>
+      </div>
+
+      <!-- Hidden images (shown when clicking Show More) -->
+      <div class="gallery-img-wrapper extra-img" style="display: none;">
+        <img class="gallery-img"
+          src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=80"
+          alt="Snack Bar">
+        <div class="gallery-overlay">
+          <div class="gallery-title">Snack Bar</div>
+          <div class="gallery-desc">Refreshments and gaming fuel</div>
+        </div>
+      </div>
+
+
+
+      <!-- Add more hidden images here -->
+
+    </div>
+    <button class="gallery-more-btn" id="showMoreBtn">Show More</button>
+  </section>
+  
+<!-- Add this section before the footer -->
+<section class="faq-section" id="faq">
+  <div class="section-title-wrapper">
+    <div class="section-title" data-text="FAQ">Frequently Asked Questions</div>
+  </div>
+  <div class="faq-container">
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What gaming systems are available?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        We offer high-end gaming PCs, PlayStation 5 consoles, PlayStation 4 Pro consoles, Racing Simulators, VR2 headsets, Pool tables, Snooker tables, and Foosball tables. All our systems are regularly maintained and updated with the latest games and hardware.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>How many games are available to play?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        We have an extensive library of over 100+ games across all platforms. This includes latest PS5 titles, popular PC games, VR experiences, and classic favorites. Our collection is regularly updated with new releases.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Do you host gaming tournaments?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        Yes! We organize weekly tournaments for popular games like CS2, Valorant, FIFA, and more. Prize pools and tournament schedules are announced on our social media channels and in-store displays.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What are your operating hours?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        We're open daily from 10:00 AM to 10:00 PM. Extended hours are available during tournaments and special events. Holiday hours may vary.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Do you offer membership plans?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        Yes, we offer various membership plans: Daily, Weekly, Monthly, and Premium memberships. Each plan comes with different benefits including discounted rates, priority booking, and exclusive tournament entry.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What amenities are available?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        We provide comfortable gaming chairs, high-speed internet, air conditioning, snack bar, refreshments, and a relaxation lounge. Free Wi-Fi is available for all visitors.
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- TESTIMONIALS SECTION -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="testimonials-title">What Gamers Say</div>
+    <div class="testimonial-carousel" id="testimonialCarousel">
+      <div class="testimonial active">
+        "Akshar Gaming Arena is the best place to hang out with friends and play the latest games. The PCs are super
+        fast and the staff is friendly!"
+        <div class="testimonial-author">- Rohan S.</div>
+      </div>
+      <div class="testimonial">
+        "Loved the tournaments! The atmosphere is electric and I made a bunch of new friends. Highly recommended for all
+        gamers."
+        <div class="testimonial-author">- Priya K.</div>
+      </div>
+      <div class="testimonial">
+        "The lounge is so cool and the snacks are great. I come here after college almost every day. 10/10 experience!"
+        <div class="testimonial-author">- Aman J.</div>
+      </div>
+    </div>
+    <div class="testimonial-nav" id="testimonialNav">
+      <button class="testimonial-nav-btn active"></button>
+      <button class="testimonial-nav-btn"></button>
+      <button class="testimonial-nav-btn"></button>
+    </div>
+  </section>
+  <!-- FOOTER: About Us, Feedback, Contact Us -->
+  <footer id="about">
+    <div class="footer-sections">
+      <!-- About Us -->
+      <div class="footer-about-section">
+        <div class="about-title">About Akshar Gaming Arena</div>
+        <div class="about-desc">
+          Akshar Gaming Arena is your destination for immersive gaming experiences in the heart of the city. With
+          high-end PCs, PlayStation 5, weekly tournaments, and a vibrant community, we offer the perfect space for
+          gamers to connect, compete, and unwind.<br><br>
+          <b>Owner Name:</b> Jaswant Mali<br>
+          <b>Location:</b> Sadar Bazar, Sirohi,Rajasthan, India 307001<br>
+          <b>Contact:</b> +91 96103 61581<br>
+          <b>Email:</b> <a href="mailto:info@akshargaming.com" style="color:#00ffe7;">info@akshargaming.com</a>
+          <div class="footer-social" style="margin-top:18px;">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Feedback Form -->
+      <div class="footer-form-section">
+        <h3>Feedback</h3>
+        <form class="footer-form" action="https://api.web3forms.com/submit" method="POST" id="feedbackForm" autocomplete="off">
+           <input type="hidden" name="access_key" value="e4c640dc-7b51-4a11-82ab-330cb77-370b2" />
+          <label>Rating *</label>
+          <div class="stars" id="feedbackStars">
+            <!-- <span class="star" data-value="0.5">★</span> -->
+            <span class="star" data-value="1">★</span>
+            <!-- <span class="star" data-value="1.5">★</span> -->
+            <span class="star" data-value="2">★</span>
+            <!-- <span class="star" data-value="2.5">★</span> -->
+            <span class="star" data-value="3">★</span>
+            <!-- <span class="star" data-value="3.5">★</span> -->
+            <span class="star" data-value="4">★</span>
+            <!-- <span class="star" data-value="4.5">★</span> -->
+            <span class="star" data-value="5">★</span>
+          </div>
+          <input type="hidden" id="feedback-rating" name="rating" required>
+          <label for="feedback-comment">Comments</label>
+          <textarea id="feedback-comment" name="comment" placeholder="Your feedback (optional)"></textarea>
+          <button type="submit">Submit Feedback</button>
+        </form>
+        <div id="feedback-success" style="display:none;color:var(--primary);margin-top:8px;">Thank you for your
+          feedback!</div>
+      </div>
+      <!-- Contact Us Form -->
+      <div class="footer-form-section">
+        <h3>Contact Us</h3>
+        <form class="footer-form" id="contactForm" autocomplete="off" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="e4c640dc-7b51-4a11-82ab-330cb77-370b2" />
+
+          <label for="contact-name">Name *</label>
+          <input type="text" id="contact-name" name="name" required placeholder="Your Name">
+          <label for="contact-email">Email *</label>
+          <input type="email" id="contact-email" name="email" required placeholder="Your Email">
+          <label for="contact-message">Message *</label>
+          <textarea id="contact-message" name="message" required placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <div id="contact-success" style="display:none;color:var(--primary);margin-top:8px;">Thank you! We'll get back to
+          you soon.</div>
+      </div>
+    </div>
+    <!-- <div class="footer-map">
+      <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=77.5946%2C12.9716%2C77.5946%2C12.9716&amp;layer=mapnik" style="border:0;width:100%;height:200px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div style="margin-top:24px; color:#555; font-size:0.95rem;"> -->
+    &copy; 2025 Akshar Gaming Arena. All rights reserved.
+    </div>
+  </footer>
+  
+  
+  
+  <script type="text/javascript" src="script/script.js"></script>
+
+  
+</body>
+
+</html>
+`

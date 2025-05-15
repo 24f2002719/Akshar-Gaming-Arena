@@ -1,7 +1,7 @@
  :root {
-    --primary: #FF8A00; /* Mango Orange */
-    --secondary: #0066FF; /* Bright Blue */
-    --gradient: linear-gradient(90deg, #FF8A00 0%, #0066FF 100%);
+    --primary: #00ffe7; /* Mango Orange */
+    --secondary: #ff00a6; /* Bright Blue */
+    --gradient: linear-gradient(90deg, #00ffe7 0%, #ff00a6 100%);
     --nav-bg: rgba(24, 27, 35, 0.85);
     --nav-bg-scrolled: #181b23;
     --dark-bg: #1a1f2e;
@@ -216,7 +216,7 @@ transition: width 0.2s ease;
       text-decoration: none;
       user-select: none;
       letter-spacing: 3px;
-    background: linear-gradient(90deg, #FF8A00 0%, #0066FF 50%, #FF8A00 100%);
+    background: linear-gradient(90deg, #00ffe7 0%, #ff00a6 50%, #00ffe7 100%);
 
       background-size: 200% auto;
       -webkit-background-clip: text;
@@ -228,7 +228,7 @@ transition: width 0.2s ease;
       text-transform: uppercase;
       user-select: none;
       white-space: nowrap;
-    text-shadow: 0 0 15px rgba(255, 138, 0, 0.3);
+    text-shadow: 0 0 15px rgba(0, 255, 231, 0.3);
     }
 
     @keyframes logoPulse {
@@ -473,7 +473,7 @@ transition: width 0.2s ease;
       font-weight: 900;
       letter-spacing: 3px;
       color: #fff;
-    background: linear-gradient(90deg, #FF8A00 0%, #8a10f5 100%);
+    background: linear-gradient(90deg, #00ffe7 0%, #8a10f5 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -481,7 +481,7 @@ transition: width 0.2s ease;
       margin-bottom: 24px;
       animation: comingSoonGlow 1.5s infinite alternate;
     text-shadow: 0 0 24px rgba(0, 0, 0, 0.7);
-      filter: drop-shadow(0 0 12px #FF8A00,0.2);
+      filter: drop-shadow(0 0 12px #ff00a6,0.2);
     }
 
     @keyframes comingSoonGlow {
@@ -503,11 +503,11 @@ transition: width 0.2s ease;
       position: relative;
       text-transform: uppercase;
       background: linear-gradient(120deg,
-        #FF8A00 0%,
-        #0066FF 25%,
-        #FF8A00 50%,
-        #0066FF 75%,
-        #FF8A00 100%
+        #00ffe7 0%,
+        #ff00a6 25%,
+        #00ffe7 50%,
+        #ff00a6 75%,
+        #00ffe7 100%
     );
       background-size: 400% 400%;
       -webkit-background-clip: text;
@@ -596,7 +596,7 @@ box-shadow: 0 0 32px rgba(255, 138, 0, 0.4);
     }
 
     .explore-btn:hover {
-    box-shadow: 0 0 48px rgba(0, 102, 255, 0.4);
+    box-shadow: 0 0 32px rgba(0, 255, 231, 0.4);
       background: linear-gradient(90deg, #ff00a6 0%, #00ffe7 100%);
       color: #fff;
       transform: scale(1.06);
